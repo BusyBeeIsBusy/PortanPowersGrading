@@ -46,17 +46,11 @@ public class StudentOverviewController {
     // Reference to the main application.
     private Main main;
 
-    /**
-     * The constructor.
-     * The constructor is called before the initialize() method.
-     */
+
     public StudentOverviewController() {
     }
 
-    /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
-     */
+
     @FXML
     private void initialize() {
         // Initialize the person table with the two columns.
@@ -74,7 +68,7 @@ public class StudentOverviewController {
     }
 
 
-   // /**
+    /**
    //  * Is called by the main application to give a reference back to itself.
    //  *
    //  * @param main
@@ -133,7 +127,7 @@ public class StudentOverviewController {
         }
     }
     /**
-     * Called when the user clicks on the delete button.
+     * clicks on the delete button.
      */
     @FXML
     private void handleDeleteStudent() {
@@ -152,7 +146,7 @@ public class StudentOverviewController {
         }
 }
     /**
-     * Called when the user clicks the new button. Opens a dialog to edit
+     * Called when the user clicks the new dialog to edit
      * details for a new person.
      */
     @FXML
@@ -165,7 +159,7 @@ public class StudentOverviewController {
     }
 
     /**
-     * Called when the user clicks the edit button. Opens a dialog to edit
+     * Called when the user clicks the edit button edit
      * details for the selected person.
      */
     @FXML

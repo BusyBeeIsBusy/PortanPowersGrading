@@ -43,15 +43,12 @@ public class StudentEditDialogController {
     private Student student;
     private boolean okClicked = false;
 
-    /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
-     */
+
     @FXML
     private void initialize() {
     }
 
-    ///**
+    /**
     // * Sets the stage of this dialog.
     // *
     // * @param dialogStage
@@ -60,7 +57,7 @@ public class StudentEditDialogController {
         this.dialogStage = dialogStage;
     }
 
-    ///**
+    /**
     // * Sets the person to be edited in the dialog.
     // *
     // * @param student
@@ -88,7 +85,7 @@ public class StudentEditDialogController {
 
     }
 
-    ///**
+    /**
     // * Returns true if the user clicked OK, false otherwise.
     // *
     // * @return
@@ -136,7 +133,6 @@ public class StudentEditDialogController {
     }
 
     /**
-     * Validates the user input in the text fields.
      *
      * @return true if the input is valid
      */

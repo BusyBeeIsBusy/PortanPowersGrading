@@ -117,7 +117,7 @@ public class Main extends Application {
         studentData.add(new Student("Martin", "Mueller"));
     }
 
-    ///**
+    /**
     // * Returns the data as an observable list of Persons.
     // *
     // * @return
@@ -127,7 +127,7 @@ public class Main extends Application {
     }
 
 
-    ///**
+    /**
     // * Opens a dialog to edit details for the specified student. If the user
     // * clicks OK, the changes are saved into the provided student object and true
     // * is returned.
@@ -165,10 +165,8 @@ public class Main extends Application {
         }
     }
 
-    ///**
+    /**
     // * Returns the person file preference, i.e. the file that was last opened.
-    // * The preference is read from the OS specific registry. If no such
-    // * preference can be found, null is returned.
     // *
     // * @return
     // */
@@ -182,7 +180,7 @@ public class Main extends Application {
         }
     }
 
-    ///**
+    /**
     // * Sets the file path of the currently loaded file. The path is persisted in
     // * the OS specific registry.
     // *
@@ -202,7 +200,7 @@ public class Main extends Application {
             primaryStage.setTitle("AddressApp");
         }
     }
-    ///**
+    /**
     // * Loads person data from the specified file. The current person data will
     // * be replaced.
     // *
@@ -233,7 +231,7 @@ public class Main extends Application {
         }
     }
 
-    ///**
+    /**
     // * Saves the current person data to the specified file.
     // *
     // * @param file

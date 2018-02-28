@@ -10,9 +10,7 @@ public class RootLayoutController {
     // Reference to the main application
     private Main main;
 
-    ///**
-    // * Is called by the main application to give a reference back to itself.
-    // *
+    /**
     // * @param main
     // */
     public void setMain(Main main) {
@@ -49,8 +47,7 @@ public class RootLayoutController {
     }
 
     /**
-     * Saves the file to the person file that is currently open. If there is no
-     * open file, the "save as" dialog is shown.
+     * Saves the file to the person file that is open
      */
     @FXML
     private void handleSave() {
@@ -63,7 +60,7 @@ public class RootLayoutController {
     }
 
     /**
-     * Opens a FileChooser to let the user select a file to save to.
+     * Opens user select a file to save to.
      */
     @FXML
     private void handleSaveAs() {
