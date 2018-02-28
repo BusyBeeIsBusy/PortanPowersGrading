@@ -51,20 +51,20 @@ public class StudentEditDialogController {
     private void initialize() {
     }
 
-    /**
-     * Sets the stage of this dialog.
-     *
-     * @param dialogStage
-     */
+    ///**
+    // * Sets the stage of this dialog.
+    // *
+    // * @param dialogStage
+    // */
     public void setDialogStage(Stage dialogStage) {
         this.dialogStage = dialogStage;
     }
 
-    /**
-     * Sets the person to be edited in the dialog.
-     *
-     * @param student
-     */
+    ///**
+    // * Sets the person to be edited in the dialog.
+    // *
+    // * @param student
+    // */
     public void setStudent(Student student) {
         this.student = student;
 
@@ -88,11 +88,11 @@ public class StudentEditDialogController {
 
     }
 
-    /**
-     * Returns true if the user clicked OK, false otherwise.
-     *
-     * @return
-     */
+    ///**
+    // * Returns true if the user clicked OK, false otherwise.
+    // *
+    // * @return
+    // */
     public boolean isOkClicked() {
         return okClicked;
     }

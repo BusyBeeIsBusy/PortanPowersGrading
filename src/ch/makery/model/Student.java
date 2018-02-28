@@ -31,12 +31,12 @@ public class Student {
         this(null, null);
     }
 
-    /**
-     * Constructor with some initial data.
-     *
-     * @param firstName
-     * @param lastName
-     */
+    ///**
+    // * Constructor with some initial data.
+    // *
+    // * @param firstName
+    // * @param lastName
+    // */
     public Student(String firstName, String lastName) {
         this.firstName = new SimpleStringProperty(firstName);
         this.lastName = new SimpleStringProperty(lastName);
