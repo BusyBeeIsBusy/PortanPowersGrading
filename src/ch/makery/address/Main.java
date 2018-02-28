@@ -1,10 +1,10 @@
 package ch.makery.address;
 
-import ch.makery.model.Student;
-import ch.makery.model.StudentListWrapper;
-import ch.makery.view.RootLayoutController;
-import ch.makery.view.StudentEditDialogController;
-import ch.makery.view.StudentOverviewController;
+import ch.makery.address.model.Student;
+import ch.makery.address.model.StudentListWrapper;
+import ch.makery.address.view.RootLayoutController;
+import ch.makery.address.view.StudentEditDialogController;
+import ch.makery.address.view.StudentOverviewController;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -30,7 +30,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("AddressApp");
+        this.primaryStage.setTitle("Student Grading");
 
         initRootLayout();
 
@@ -42,9 +42,8 @@ public class Main extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class
-                    .getResource("view/RootLayout.fxml"));
-            rootLayout = (BorderPane) loader.load();
+            loader.setLocation(Main.class.getResource("view/RootLayout.fxml"));
+            rootLayout = loader.load();
 
             // Show the scene containing the root layout.
             Scene scene = new Scene(rootLayout);
@@ -72,10 +71,10 @@ public class Main extends Application {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/StudentOverview.fxml"));
-            AnchorPane personOverview = (AnchorPane) loader.load();
+            AnchorPane studentOverview = loader.load();
 
             // Set person overview into the center of root layout.
-            rootLayout.setCenter(personOverview);
+            rootLayout.setCenter(studentOverview);
 
             // Give the controller access to the main app.
             StudentOverviewController controller = loader.getController();
@@ -86,11 +85,11 @@ public class Main extends Application {
         }
     }
 
-   // /**
-   //  * Returns the main stage.
-   //  *
-   //  * @return
-   //  */
+    /**
+     * Returns the main stage.
+     *
+     * @return
+     */
     public Stage getPrimaryStage() {
         return primaryStage;
     }
@@ -141,7 +140,7 @@ public class Main extends Application {
             // Load the fxml file and create a new stage for the popup dialog.
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/StudentEditDialog.fxml"));
-            AnchorPane page = (AnchorPane) loader.load();
+            AnchorPane page = loader.load();
 
             // Create the dialog Stage.
             Stage dialogStage = new Stage();
