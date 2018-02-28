@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsu.cs345.grade.Controller">
+   <AnchorPane prefHeight="1000.0" prefWidth="1500.0">
+      <children>
+         <Separator layoutY="-12.0" prefHeight="192.0" prefWidth="1500.0" />
+         <Separator layoutX="-12.0" layoutY="175.0" prefHeight="2.0" prefWidth="1510.0" />
+         <Label alignment="TOP_CENTER" layoutX="700.0" layoutY="110.0" text="Grade" />
+         <Label layoutX="1150.0" layoutY="112.0" text="Feedback" />
+         <Label layoutX="157.0" layoutY="105.0" text="Assignment">
+            <padding>
+               <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+            </padding>
+         </Label>
+         <Separator fx:id="assignmentNameOne" layoutX="503.0" layoutY="176.0" orientation="VERTICAL" prefHeight="822.0" prefWidth="0.0" />
+         <Separator layoutX="961.0" layoutY="176.0" orientation="VERTICAL" prefHeight="822.0" prefWidth="0.0" />
+         <TextField fx:id="AssignmentNameBox1" layoutX="65.0" layoutY="213.0" promptText="Assignment Name" AnchorPane.leftAnchor="69.0">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </TextField>
+         <Separator layoutX="2.0" layoutY="193.0" prefHeight="192.0" prefWidth="1500.0" />
+         <TextField fx:id="AssignmentNameBox2" layoutX="69.0" layoutY="320.0" promptText="Assignment Name">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </TextField>
+         <Separator layoutX="1.0" layoutY="318.0" prefHeight="192.0" prefWidth="1500.0" AnchorPane.leftAnchor="1.0" />
+         <TextField fx:id="AssignmentNameBox3" layoutX="69.0" layoutY="453.0">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </TextField>
+         <Separator layoutX="2.0" layoutY="443.0" prefHeight="192.0" prefWidth="1500.0" />
+         <Label layoutX="700.0" layoutY="218.0" text="/3" />
+         <Label layoutX="700.0" layoutY="325.0" text="/3" />
+         <Label layoutX="700.0" layoutY="458.0" text="/3" />
+         <MenuButton fx:id="studentMenuButton" layoutX="59.0" layoutY="44.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Student">
+            <items>
+               <MenuItem mnemonicParsing="false" text="Johnson, Johnny" />
+               <MenuItem fx:id="studentMenuButtonAddNewStudent" mnemonicParsing="false" text="Add Student" />
+            </items>
+         </MenuButton>
+         <TextField fx:id="feedbackAssignment1" layoutX="967.0" layoutY="193.0" prefHeight="79.0" prefWidth="526.0" promptText="mo">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </TextField>
+         <TextField fx:id="feedbackAssignment2" layoutX="967.0" layoutY="308.0" prefHeight="79.0" prefWidth="526.0">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </TextField>
+         <TextField fx:id="feedbackAssignment3" layoutX="967.0" layoutY="431.0" prefHeight="79.0" prefWidth="526.0">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </TextField>
+      </children>
+   </AnchorPane>
+</Pane>
